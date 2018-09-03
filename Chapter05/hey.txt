@@ -1,0 +1,40 @@
+$ hey https://etsy.com
+Summary:
+  Total:	15.4234 secs
+  Slowest:	7.3585 secs
+  Fastest:	0.9804 secs
+  Average:	3.1290 secs
+  Requests/sec:	12.9673
+
+Response time histogram:
+  0.980 [1]	|∎
+  1.618 [12]	|∎∎∎∎∎∎∎∎∎∎
+  2.256 [47]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  2.894 [43]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  3.532 [37]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  4.169 [17]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  4.807 [17]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  5.445 [13]	|∎∎∎∎∎∎∎∎∎∎∎
+  6.083 [5]	|∎∎∎∎
+  6.721 [6]	|∎∎∎∎∎
+  7.359 [2]	|∎∎
+
+Latency distribution:
+  10% in 1.7135 secs
+  25% in 2.1085 secs
+  50% in 2.8585 secs
+  75% in 3.8118 secs
+  90% in 5.1091 secs
+  95% in 5.8204 secs
+  99% in 6.9235 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	 0.2798 secs, 0.0000 secs, 2.8845 secs
+  DNS-lookup:	 0.1346 secs, 0.0004 secs, 1.1582 secs
+  req write:	 0.0001 secs, 0.0000 secs, 0.0003 secs
+  resp wait:	 0.4646 secs, 0.2297 secs, 2.2864 secs
+  resp read:	 1.4861 secs, 0.2546 secs, 4.4335 secs
+
+Status code distribution:
+  [200]	200 responses
+

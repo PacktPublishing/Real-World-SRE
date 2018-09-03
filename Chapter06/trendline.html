@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Date');
+        data.addColumn('number', 'Storage');
+        data.addRows([
+          [new Date(2017,01,01), 6.639196089],
+          [new Date(2017,01,02), 13.13912788],
+          [new Date(2017,01,03), 20.31844341],
+          [new Date(2017,01,04), 32.13678032],
+          [new Date(2017,01,05), 47.0979313],
+          [new Date(2017,01,06), 60.79255776],
+          [new Date(2017,01,07), 76.7817165],
+          [new Date(2017,01,08), 94.15286599],
+          [new Date(2017,01,09), 117.3395781],
+          [new Date(2017,01,10), 135.9582099],
+          [new Date(2017,01,11), 167.3341001],
+          [new Date(2017,01,12), 185.7726154],
+          [new Date(2017,01,13), 223.1131785],
+          [new Date(2017,01,14), 245.7796438],
+          [new Date(2017,01,15), 275.6392865],
+          [new Date(2017,01,16), 308.6719424],
+          [new Date(2017,01,17), 348.6216402],
+          [new Date(2017,01,18), 395.4696568],
+          [new Date(2017,01,19), 420.1573226],
+          [new Date(2017,01,20), 471.7249065],
+          [new Date(2017,01,21), 526.2637482],
+          [new Date(2017,01,22), 567.5855832],
+          [new Date(2017,01,23), 620.0355941],
+          [new Date(2017,01,24), 652.0106353],
+          [new Date(2017,01,25), 717.4843659],
+          [new Date(2017,01,26), 775.1874656],
+          [new Date(2017,01,27), 820.189472],
+          [new Date(2017,01,28), 886.9779067],
+          [new Date(2017,01,29), 958.9261174],
+          [new Date(2017,01,30), 1013.944771],
+          [new Date(2017,01,31), 1086.190184],
+          [new Date(2017,02,01), 1145.215398],
+          [new Date(2017,02,02), 1208.669407],
+          [new Date(2017,02,03), 1271.808468],
+          [new Date(2017,02,04), 1341.425063],
+          [new Date(2017,02,05), 1423.258064],
+          [new Date(2017,02,06), 1499.329832],
+          [new Date(2017,02,07), 1578.103432],
+          [new Date(2017,02,08), 1671.206352],
+          [new Date(2017,02,09), 1723.368851],
+          [new Date(2017,02,10), 1834.977919],
+          [new Date(2017,02,11), 1905.465452],
+          [new Date(2017,02,12), 1992.819916],
+          [new Date(2017,02,13), 2096.230559],
+          [new Date(2017,02,14), 2180.231231],
+          [new Date(2017,02,15), 2277.931942],
+          [new Date(2017,02,16), 2363.245626],
+          [new Date(2017,02,17), 2482.775702],
+          [new Date(2017,02,18), 2565.56707],
+          [new Date(2017,02,19), 2693.082007],
+          [new Date(2017,02,20), 2756.321283],
+          [new Date(2017,02,21), 2885.553013],
+          [new Date(2017,02,22), 2990.769937],
+          [new Date(2017,02,23), 3120.349517],
+          [new Date(2017,02,24), 3245.98102],
+          [new Date(2017,02,25), 3350.527335],
+          [new Date(2017,02,26), 3476.340942],
+          [new Date(2017,02,27), 3583.697843],
+          [new Date(2017,02,28), 3702.711992],
+          [new Date(2017,03,01), 3835.984733],
+          [new Date(2017,03,02), 3962.368843],
+          [new Date(2017,03,03), 4091.03838],
+          [new Date(2017,03,04), 4199.780676],
+          [new Date(2017,03,05), 4351.262665],
+          [new Date(2017,03,06), 4473.975172],
+          [new Date(2017,03,07), 4591.553514],
+          [new Date(2017,03,08), 4722.046578],
+          [new Date(2017,03,09), 4874.179328],
+          [new Date(2017,03,10), 5004.912975],
+          [new Date(2017,03,11), 5149.560192],
+          [new Date(2017,03,12), 5321.03823],
+          [new Date(2017,03,13), 5435.641926],
+          [new Date(2017,03,14), 5559.702895],
+          [new Date(2017,03,15), 5752.118372],
+          [new Date(2017,03,16), 5874.533415],
+          [new Date(2017,03,17), 6012.013984],
+          [new Date(2017,03,18), 6212.552048],
+          [new Date(2017,03,19), 6361.314812],
+          [new Date(2017,03,20), 6495.787358],
+          [new Date(2017,03,21), 6656.051516],
+          [new Date(2017,03,22), 6856.597774],
+          [new Date(2017,03,23), 6981.04873],
+          [new Date(2017,03,24), 7143.911685],
+          [new Date(2017,03,25), 7328.832026],
+          [new Date(2017,03,26), 7505.203208],
+          [new Date(2017,03,27), 7671.290816],
+          [new Date(2017,03,28), 7886.809599],
+          [new Date(2017,03,29), 8020.95633],
+          [new Date(2017,03,30), 8192.329515],
+          [new Date(2017,03,31), 8373.329102],
+          [new Date(2017,04,01), 8568.889788],
+          [new Date(2017,04,02), 8749.284096],
+          [new Date(2017,04,03), 9013.168065],
+          [new Date(2017,04,04), 9200.80496],
+          [new Date(2017,04,05), 9312.642142],
+          [new Date(2017,04,06), 9563.606598],
+          [new Date(2017,04,07), 9738.67409],
+          [new Date(2017,04,08), 9993.884879]
+        ]);
+
+        var options = {
+          title: "Storage use over time",
+          vAxis: {title: 'Storage in GB Used', minValue: 0, maxValue: 31000},
+          hAxis: {title: 'Date', minValue: new Date(2017,01,01), maxValue: new Date(2018,01,01)},
+          trendlines: {
+            0: {
+              opacity: 0.2,
+              showR2: true,
+              visibleInLegend: true
+            }
+          }
+        };
+
+        var chartLinear = new google.visualization.LineChart(document.getElementById('chartLinear'));
+        chartLinear.draw(data, options);
+
+        options.trendlines[0].type = 'exponential';
+
+        var chartExponential = new google.visualization.LineChart(document.getElementById('chartExponential'));
+        chartExponential.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chartLinear" style="height: 350px"></div>
+    <div id="chartExponential" style="height: 350px"></div>
+  </body>
+</html>

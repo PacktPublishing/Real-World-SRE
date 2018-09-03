@@ -1,0 +1,51 @@
+$ curl -svL google.com > /dev/null
+* Rebuilt URL to: google.com/
+*   Trying 172.217.4.206...
+* TCP_NODELAY set
+* Connected to google.com (172.217.4.206) port 80 (#0)
+> GET / HTTP/1.1
+> Host: google.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+>
+< HTTP/1.1 301 Moved Permanently
+< Location: http://www.google.com/
+< Content-Type: text/html; charset=UTF-8
+< Date: Sat, 23 Jun 2018 17:20:42 GMT
+< Expires: Mon, 23 Jul 2018 17:20:42 GMT
+< Cache-Control: public, max-age=2592000
+< Server: gws
+< Content-Length: 219
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+<
+* Ignoring the response-body
+{ [219 bytes data]
+* Connection #0 to host google.com left intact
+* Issue another request to this URL: 'http://www.google.com/'
+*   Trying 216.58.194.100...
+* TCP_NODELAY set
+* Connected to www.google.com (216.58.194.100) port 80 (#1)
+> GET / HTTP/1.1
+> Host: www.google.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Date: Sat, 23 Jun 2018 17:20:42 GMT
+< Expires: -1
+< Cache-Control: private, max-age=0
+< Content-Type: text/html; charset=ISO-8859-1
+< P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+< Server: gws
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< Set-Cookie: 1P_JAR=2018-06-23-17; expires=Mon, 23-Jul-2018 17:20:42 GMT; path=/; domain=.google.com
+< Set-Cookie: NID=133=QXSN94wGKlX7EAQRKXcaaadBdvjh5zlrRRBBpLYbIbOIn4lINCGUD53jO2DAJyvT-y0Q8-nWKuYqUpplb5H3LeztzGD5CB2taBaq98gjkX_WZu0eJIT_omJznNIDi; expires=Sun, 23-Dec-2018 17:20:42 GMT; path=/; domain=.google.com; HttpOnly
+< Accept-Ranges: none
+< Vary: Accept-Encoding
+< Transfer-Encoding: chunked
+<
+{ [2143 bytes data]
+* Connection #1 to host www.google.com left intact
+

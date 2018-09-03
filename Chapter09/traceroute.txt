@@ -1,0 +1,13 @@
+$ traceroute google.com
+traceroute to google.com (172.217.10.110), 30 hops max, 60 byte packets
+ 1  gateway (207.251.90.49)  0.206 ms  0.209 ms  0.198 ms
+ 2  206.252.215.173 (206.252.215.173)  1.147 ms  1.174 ms  1.308 ms
+ 3  ae-12.a00.nycmny13.us.bb.gin.ntt.net (128.241.0.233)  9.558 ms  9.580 ms  9.571 ms
+ 4  ae-4.r07.nycmny01.us.bb.gin.ntt.net (129.250.6.66)  1.046 ms ae-4.r08.nycmny01.us.bb.gin.ntt.net (129.250.6.74)  1.038 ms  1.053 ms
+ 5  ae-0.a01.nycmny01.us.bb.gin.ntt.net (129.250.3.214)  3.042 ms ae-1.a01.nycmny01.us.bb.gin.ntt.net (129.250.6.69)  3.057 ms  3.013 ms
+ 6  ae-0.tata-communications.nycmny01.us.bb.gin.ntt.net (129.250.9.114)  5.005 ms  0.740 ms  0.774 ms
+ 7  72.14.195.232 (72.14.195.232)  1.200 ms  1.147 ms  1.139 ms
+ 8  108.170.248.33 (108.170.248.33)  2.116 ms  2.147 ms  2.305 ms
+ 9  216.239.62.157 (216.239.62.157)  1.119 ms  1.269 ms 216.239.62.159 (216.239.62.159)  1.232 ms
+10  lga34s15-in-f14.1e100.net (172.217.10.110)  1.193 ms  1.208 ms  1.206 ms
+

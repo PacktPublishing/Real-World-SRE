@@ -1,0 +1,18 @@
+$ curl -sv -X TEST www.google.com/ > /dev/null
+*   Trying 216.58.194.100...
+* TCP_NODELAY set
+* Connected to www.google.com (216.58.194.100) port 80 (#0)
+> TEST / HTTP/1.1
+> Host: www.google.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+>
+< HTTP/1.1 405 Method Not Allowed
+< Content-Type: text/html; charset=UTF-8
+< Referrer-Policy: no-referrer
+< Content-Length: 1589
+< Date: Sat, 23 Jun 2018 17:37:46 GMT
+<
+{ [1589 bytes data]
+* Connection #0 to host www.google.com left intact
+

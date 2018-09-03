@@ -1,0 +1,16 @@
+$ ping google.com -c 1
+PING google.com (172.217.10.110): 56 data bytes
+64 bytes from 172.217.10.110: icmp_seq=0 ttl=55 time=213.133 ms
+
+--- google.com ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 213.133/213.133/213.133/0.000 ms
+
+$ sudo tcpdump -i all -v icmp
+tcpdump: data link type PKTAP
+tcpdump: listening on all, link-type PKTAP (Apple DLT_PKTAP), capture size 262144 bytes
+02:59:58.459604 IP (tos 0x0, ttl 64, id 56927, offset 0, flags [none], proto ICMP (1), length 84)
+    192.168.1.17 > lga34s15-in-f14.1e100.net: ICMP echo request, id 28065, seq 0, length 64
+02:59:58.672657 IP (tos 0x0, ttl 55, id 0, offset 0, flags [none], proto ICMP (1), length 84)
+    lga34s15-in-f14.1e100.net > 192.168.1.17: ICMP echo reply, id 28065, seq 0, length 64
+

@@ -1,0 +1,22 @@
+$ cat urls.txt | grep google | sort -u | curl -d @- -sv google.com/ > /dev/null
+*   Trying 216.58.216.206...
+* TCP_NODELAY set
+* Connected to google.com (216.58.216.206) port 80 (#0)
+> POST / HTTP/1.1
+> Host: google.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+> Content-Length: 1677433
+> Content-Type: application/x-www-form-urlencoded
+> Expect: 100-continue
+>
+< HTTP/1.1 413 Request Entity Too Large
+< Content-Type: text/html; charset=UTF-8
+< Referrer-Policy: no-referrer
+< Content-Length: 2398
+< Date: Sat, 23 Jun 2018 18:00:20 GMT
+< Connection: close
+<
+{ [2398 bytes data]
+* Closing connection 0
+

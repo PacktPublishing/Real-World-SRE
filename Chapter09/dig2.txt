@@ -1,0 +1,12 @@
+$ dig www.natwelch.com @8.8.8.8 +nocomment
+
+; <<>> DiG 9.10.6 <<>> www.natwelch.com @8.8.8.8 +nocomment
+;; global options: +cmd
+;www.natwelch.com.		IN	A
+www.natwelch.com.	183	IN	CNAME	natwelch.com.
+natwelch.com.		183	IN	A	35.190.39.138
+;; Query time: 45 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Tue Jun 19 01:58:39 UTC 2018
+;; MSG SIZE  rcvd: 75
+

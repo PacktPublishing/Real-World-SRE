@@ -1,0 +1,25 @@
+$ curl -sv -X DELETE -d '' www.google.com/ > /dev/null
+*   Trying 216.58.194.100...
+* TCP_NODELAY set
+*   Trying 2607:f8b0:4000:813::2004...
+* TCP_NODELAY set
+* Connected to www.google.com (216.58.194.100) port 80 (#0)
+> DELETE / HTTP/1.1
+> Host: www.google.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+> Content-Length: 0
+> Content-Type: application/x-www-form-urlencoded
+>
+< HTTP/1.1 405 Method Not Allowed
+< Allow: GET, HEAD
+< Date: Sat, 23 Jun 2018 17:41:29 GMT
+< Content-Type: text/html; charset=UTF-8
+< Server: gws
+< Content-Length: 1591
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+<
+{ [1589 bytes data]
+* Connection #0 to host www.google.com left intact
+

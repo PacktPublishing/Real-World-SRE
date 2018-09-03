@@ -1,0 +1,12 @@
+$ sudo netstat -tunapl | head
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:2222            0.0.0.0:*               LISTEN      28938/VBoxHeadless
+tcp        0      0 0.0.0.0:35695           0.0.0.0:*               LISTEN      -
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      1095/rpcbind
+tcp        0      0 207.251.90.53:9009      0.0.0.0:*               LISTEN      10330/julia
+tcp        0      0 0.0.0.0:43473           0.0.0.0:*               LISTEN      1156/rpc.mountd
+tcp        0      0 207.251.90.53:9010      0.0.0.0:*               LISTEN      10374/julia
+tcp        0      0 0.0.0.0:1234            0.0.0.0:*               LISTEN      5487/python
+tcp        0      0 207.251.90.53:9011      0.0.0.0:*               LISTEN      10423/julia
+

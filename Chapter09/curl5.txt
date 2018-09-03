@@ -1,0 +1,17 @@
+$ curl -svL localhost:8080
+* Rebuilt URL to: localhost:8080/
+*   Trying ::1...
+* TCP_NODELAY set
+* Connection failed
+* connect to ::1 port 8080 failed: Connection refused
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET / HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.54.0
+> Accept: */*
+>
+* Empty reply from server
+* Connection #0 to host localhost left intact
+

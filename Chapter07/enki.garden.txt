@@ -1,0 +1,46 @@
+# enki.garden
+
+Enki Garden is a personal internet archive. Its goal is to create a searchable index of websites and documents a user likes and can be hosted on their laptop or cheaply on a personal server.
+
+## Background
+
+I love the Internet Archive. They are an archive of digital culture. Everything from old video games, old websites and books is stored in their vaunted public archives online at archive.org. I think their hoarder approach to the Internet is the only way we can preserve history for the future. We are already getting to the point where there are programs we cannot run, art we cannot see, machines we cannot fix. We need to preserve all of this so that our children's children can understand how we got to where we are today.
+
+Due to copyright laws, non-disclosure agreements (NDAs) and other general privacy concerns, you cannot upload everything to the Internet Archive, nor do you want everyone to have access to it. For example, I want my tax documents searchable, but I do not want them on the Internet Archive for everyone to see. Also, the Internet Archive respects `robots.txt`, so they will stop sharing archives for URLs someone puts in their `robots.txt`, even if you want to archive it.
+
+> `robots.txt` is a file served by a website that defines which robot spiders (also known as web-crawlers, indexers or scrapers) can index their pages. It is a blacklist of pages, and a list of bots that should not access those pages.
+
+## Minimum Viable Product
+
+While the eventual goal would be to search all files across all of my computers, and every website I have ever visited, I believe a good starting place is to be able to give a starting URL, scrape its contents, take a screenshot, and then scrape every page it links to.
+
+Every day, I would like to re-scrape and screenshot every page I have stored, but not the pages they linked to.
+
+I want to store everything on a cloud service because I have a few different computers, and I think it'd be a good start to solving the problem.
+
+## Alternatives
+
+- https://archive.org/
+- https://archive.is/
+- https://webrecorder.io/
+- https://github.com/marvelm/erised
+- https://github.com/rahiel/archiveror
+
+## Inspiration
+
+- https://www.gwern.net/Archiving-URLs
+- https://www.archiveteam.org/
+
+## Implementation
+
+There are three main functions:
+
+- Users submitting URLs and scanning for linked pages.
+- Scraping and screenshotting each URL.
+- Browsing historical archives.
+
+There will be a relational database that has two tables, one for URLs and one for scrape history.
+
+We will store all scraped assets in a cloud object store and provide a link to them in the scrape history.
+
+There will be four processes. The first is the web UI for browsing and adding new URLs. The second will screenshot URLs. The third will capture HTML and related assets and compress them into an archive. The fourth will scan user submitted URLs for links and add those to the database.

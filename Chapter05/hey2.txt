@@ -1,0 +1,38 @@
+$ hey -q 1 -c 1 -n 20 https://etsy.com
+Summary:
+  Total:	27.8880 secs
+  Slowest:	1.9484 secs
+  Fastest:	0.9688 secs
+  Average:	1.3444 secs
+  Requests/sec:	0.7172
+
+Response time histogram:
+  0.969 [1]	|∎∎∎∎∎∎∎∎∎∎
+  1.067 [4]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  1.165 [2]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  1.263 [2]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  1.361 [3]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  1.459 [2]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  1.557 [1]	|∎∎∎∎∎∎∎∎∎∎
+  1.655 [1]	|∎∎∎∎∎∎∎∎∎∎
+  1.752 [1]	|∎∎∎∎∎∎∎∎∎∎
+  1.850 [1]	|∎∎∎∎∎∎∎∎∎∎
+  1.948 [2]	|∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+
+Latency distribution:
+  10% in 0.9828 secs
+  25% in 1.0822 secs
+  50% in 1.3048 secs
+  75% in 1.6352 secs
+  90% in 1.9073 secs
+  95% in 1.9484 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	 0.0428 secs, 0.0000 secs, 0.8559 secs
+  DNS-lookup:	 0.0209 secs, 0.0017 secs, 0.3805 secs
+  req write:	 0.0001 secs, 0.0000 secs, 0.0002 secs
+  resp wait:	 0.3897 secs, 0.2737 secs, 0.5480 secs
+  resp read:	 0.3370 secs, 0.0763 secs, 1.0449 secs
+
+Status code distribution:
+  [200]	20 responses

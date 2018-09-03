@@ -1,0 +1,19 @@
+; <<>> DiG 9.10.6 <<>> natwelch.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 5354
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;natwelch.com.			IN	A
+
+;; ANSWER SECTION:
+natwelch.com.		180	IN	A	35.190.39.138
+
+;; Query time: 55 msec
+;; SERVER: 2604:2000:1281:f9:2e30:33ff:fe5f:55af#53(2604:2000:1281:f9:2e30:33ff:fe5f:55af)
+;; WHEN: Tue Jun 19 01:45:59 UTC 2018
+;; MSG SIZE  rcvd: 57
+
