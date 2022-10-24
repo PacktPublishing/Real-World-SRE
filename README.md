@@ -35,3 +35,7 @@ All Ruby code in this book assumes Ruby 2.5, which can be acquired from https://
 
 * [DevOps with Kubernetes](https://www.packtpub.com/virtualization-and-cloud/devops-kubernetes?utm_source=github&utm_medium=repository&utm_campaign=9781788396646)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788628884">https://packt.link/free-ebook/9781788628884 </a> </p>
